@@ -19,7 +19,7 @@ export default function TeamLeaderShip() {
             <p className="text-black text-[46px] font-extrabold">Leadership</p>
           </div>
         </div>
-        <div className="md:w-[80%] w-[100%] mx-auto">
+        <div data-aos="fade-up" className="md:w-[80%] w-[100%] mx-auto">
           <div className="flex pl-3 md:pl-22 my-10 items-center justify-around flex-wrap">
             <div className="lg:w-1/3 md:w-1/2 my-6">
               <div className="w-[97%] flex items-center justify-center flex-col">

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -9,35 +10,70 @@ export default function Header() {
   };
 
   return (
-    <div>
-      <div className="max-w-[100%] shadow-md h-24 flex justify-between px-3 md:justify-evenly items-center">
+    <div className="sticky top-0 z-50 bg-white ">
+      <div className="max-w-[100%] shadow-md h-16 sm:h-24 flex justify-between px-3 md:justify-evenly items-center">
         <div className="flex gap-1">
-          <p className="md:text-[49px] text-[35px] font-bold tracking-tighter">
-            SELLING <span className="text-red-600">.</span>
+          <p className="md:text-[42px] text-[35px] font-bold tracking-tighter">
+            Selling <span className="text-red-600">.</span>
           </p>
         </div>
         <div className="hidden md:flex gap-12 items-center">
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 text-red-500 font-normal">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 text-red-500 font-normal"
+          >
             Home
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="products"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+          >
             Products
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="about-us"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+          >
             About Us
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="summer-sale"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+          >
             Special
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="testimonials"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+          >
             Testimonials
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="blog"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+          >
             Blog
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+          >
             Contact
-          </p>
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleSidebar} className="text-[30px]">
@@ -46,9 +82,8 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
+        className={`fixed z-20 top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
@@ -56,27 +91,69 @@ export default function Header() {
           &times;
         </button>
         <div className="flex flex-col gap-5 p-5">
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             Home
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="products"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             Products
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="about-us"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             About Us
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="special"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             Special
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="testimonials"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             Testimonials
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="blog"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             Blog
-          </p>
-          <p className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal">
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 font-normal"
+            onClick={toggleSidebar}
+          >
             Contact
-          </p>
+          </Link>
         </div>
       </div>
     </div>

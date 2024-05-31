@@ -27,7 +27,7 @@ export default function AboutUs() {
                 <p className="font-bold text-[37px] ">About Us</p>
               </div>
               <div>
-                <p className="font-light text-[19px] pe-16">
+                <p className="font-light text-center  text-[19px] pe-16">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
                   fuga ipsa, repellat blanditiis nihil, consectetur.
                   Consequuntur eum inventore, rem maxime, nisi excepturi ipsam

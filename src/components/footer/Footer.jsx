@@ -54,8 +54,8 @@ export default function Footer() {
                 <div className="mt-2">
                   <p className="font-semibold text-[19px]">$60.00</p>
                 </div>
-                <div className="mt-3 h-[35px] w-[130px] flex items-center justify-center bg-black">
-                  <p className="text-white">Add To Cart</p>
+                <div className="mt-3 h-[35px] w-[130px] cursor-pointer flex items-center hover:bg-white border-[1px] border-black justify-center bg-black">
+                  <p className="text-white hover:text-black">Add To Cart</p>
                 </div>
               </div>
             </div>

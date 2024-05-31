@@ -11,19 +11,49 @@ import FeaturesProducts from "../../../components/featuresProducts/FeaturesProdu
 import AboutUs from "../../../components/aboutUs/AboutUs";
 import Testimonials from "../../../components/testimonials/Testimonials";
 import TestimonialsSwiper from "../../../components/swiper/TestimonialsSwiper";
+import OurProducts from "../../../components/ourProducts/OurProducts";
+import Notified from "../../../components/notified/Notified";
+import SummerSale from "../../../components/summerSale/SummerSale";
+import ShopWithUs from "../../../components/shopWithUs/ShopWithUs";
 
 export default function Home() {
   return (
     <>
       <TopBar />
       <Header />
-      <FeaturesProducts />
-      <AboutUs />
-      <TeamLeaderShip />
-      <Services />
-      <TestimonialsSwiper />
-      <BlogPosts />
-      <ContactForm />
+      <div id="home">
+        <ShopWithUs />
+      </div>
+      <div id="products">
+        <OurProducts />
+      </div>
+      <div id="notified">
+        <Notified />
+      </div>
+      <div id="features-products">
+        <FeaturesProducts />
+      </div>
+      <div id="about-us">
+        <AboutUs />
+      </div>
+      <div id="team-leadership">
+        <TeamLeaderShip />
+      </div>
+      <div id="summer-sale">
+        <SummerSale />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="testimonials">
+        <TestimonialsSwiper />
+      </div>
+      <div id="blog">
+        <BlogPosts />
+      </div>
+      <div id="contact">
+        <ContactForm />
+      </div>
       <Footer />
       <LastFooter />
     </>

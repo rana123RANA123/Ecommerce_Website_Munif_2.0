@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -52,4 +56,63 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: red;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #3f3f46; /* Fallback color if image is not loaded */
+}
+
+.img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0%) brightness(60%);
+  z-index: 1;
+  opacity: 1;
+}
+
+.img > * {
+  position: relative;
+  z-index: 2;
+}
+
+.imgTop {
+  position: relative;
+  width: 100%;
+  gap: 7px;
+  overflow: hidden;
+  background-color: #3f3f46;
+}
+
+.imgTop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0%) brightness(60%);
+  z-index: 1;
+  opacity: 1;
+}
+
+.imgTop > * {
+  position: relative;
+  z-index: 2;
 }

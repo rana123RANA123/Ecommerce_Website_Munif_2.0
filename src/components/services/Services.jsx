@@ -20,7 +20,10 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="md:w-[80%] w-[100%] mx-auto flex mt-5 justify-center items-center flex-wrap">
+        <div
+          className="md:w-[80%] w-[100%] mx-auto flex mt-5 justify-center items-center flex-wrap"
+          data-aos="fade-up"
+        >
           <div className="lg:w-1/3 sm:w-1/2 px-4 mt-6">
             <div className="flex gap-4">
               <div>
