@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div className="sticky top-0 z-50 bg-white ">
-      <div className="max-w-[100%] shadow-md h-16 sm:h-24 flex justify-between px-3 md:justify-evenly items-center">
+      <div className="max-w-[100%] shadow-md h-16 sm:h-20 flex justify-between px-3 md:justify-evenly items-center">
         <div className="flex gap-1">
           <p className="md:text-[42px] text-[35px] font-bold tracking-tighter">
             Selling <span className="text-red-600">.</span>
@@ -22,7 +22,7 @@ export default function Header() {
             to="home"
             smooth={true}
             duration={500}
-            className="text-[20px] cursor-pointer hover:text-red-500 transition duration-500 text-red-500 font-normal"
+            className="text-[20px] cursor-pointer hover:text-red-500  transition duration-500  font-normal"
           >
             Home
           </Link>

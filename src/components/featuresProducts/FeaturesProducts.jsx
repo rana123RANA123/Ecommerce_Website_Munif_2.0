@@ -6,8 +6,8 @@ export default function FeaturesProducts() {
   return (
     <div className="md:bg-gray-50 py-14">
       <div>
-        <div className="md:max-w-[35%] w-[80%] flex items-center justify-center py-14">
-          <div className="ml-20 md:ml-0">
+        <div className="md:max-w-[35%] w-[80%] flex items-center mx-auto justify-center py-14">
+          <div className="md:ml-0">
             <p className="md:text-[19px] text-[15px] text-center text-gray-500 font-semibold">
               AWESOME PRODUCTS
             </p>
