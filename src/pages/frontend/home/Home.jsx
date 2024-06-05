@@ -15,6 +15,7 @@ import OurProducts from "../../../components/ourProducts/OurProducts";
 import Notified from "../../../components/notified/Notified";
 import SummerSale from "../../../components/summerSale/SummerSale";
 import ShopWithUs from "../../../components/shopWithUs/ShopWithUs";
+import GsapTextScroll from "../../../components/gsapTextScroll/GsapTextScroll";
 
 export default function Home() {
   return (
@@ -50,6 +51,9 @@ export default function Home() {
       </div>
       <div id="blog">
         <BlogPosts />
+      </div>
+      <div id="GsapTextScroll">
+        <GsapTextScroll />
       </div>
       <div id="contact">
         <ContactForm />

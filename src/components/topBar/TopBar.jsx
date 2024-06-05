@@ -14,7 +14,7 @@ export default function TopBar() {
               <SlSocialFacebook color="white" size={20} />
             </div>
           </div>
-          <div className="w-9 h-9 bg-black border-[1px] flex items-center justify-center rounded-full ">
+          <div className="w-9 h-9 text- bg-black border-[1px] flex items-center justify-center rounded-full ">
             <div className="">
               <LuTwitter color="white" size={20} />
             </div>
